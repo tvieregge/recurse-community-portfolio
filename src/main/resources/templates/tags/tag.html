@@ -15,6 +15,7 @@
       Tag
     </span>
   </h1>
+  <div data-th-text="${tag.description}"> Tag </div>
   <div data-th-replace="~{projects/list :: list(${projects})}">
     <a href="projects/list.html">Project list fragment</a>
   </div>

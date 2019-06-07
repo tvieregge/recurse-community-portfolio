@@ -60,7 +60,8 @@ public interface ProjectRepository
         "  a.bio_internal as author_bio_internal," +
         "  a.bio_public as author_bio_public," +
         "  t.tag_id as tag_tag_id," +
-        "  t.name as tag_name " +
+        "  t.name as tag_name, " +
+        "  t.description as tag_description " +
         "from visible_projects v" +
         "  inner join projects p" +
         "    on v.project_id = p.project_id" +
